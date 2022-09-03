@@ -11,6 +11,10 @@
 
     <script src="https://kit.fontawesome.com/ea59fd36cc.js" crossorigin="anonymous"></script>
 
+    <!-- jquery link -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
     <!-- css link -->
 
     <link rel="stylesheet" href="style.css">
@@ -59,7 +63,148 @@
                 </ul>
             </div>
         </header>
+
+        <!-- main content -->
+
+        <div class="main_content">
+            <div class="left-sidebar">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><img src="image/Covid.png"></span>
+                            <h4>COVID-19 Information Center</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><img src="image/Friends.png"></span>
+                            <h4>Find Friends</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><img src="image/market place.png"></span>
+                            <h4>Marketplace</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><img src="image/Events.png"></span>
+                            <h4>Events</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><img src="image/Groups.png"></span>
+                            <h4>Groups</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><img src="image/watch.png"></span>
+                            <h4>Watch</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><img src="image/memories.png"></span>
+                            <h4>Memories</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><img src="image/Saved.png"></span>
+                            <h4>Saved</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><img src="image/Pages.png"></span>
+                            <h4>Pages</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><img src="image/ad centre.png"></span>
+                            <h4>Ad centre</h4>
+                        </a>
+                    </li>
+                    <li class="see_more">
+                        <a href="#">
+                            <span class="icon"><i class="fa-solid fa-angle-down"></i></span>
+                            <h4>See More</h4>
+                        </a>
+                    </li>
+                    <li class="overflow_btn">
+                        <a href="#">
+                            <span class="icon"><img src="image/Pages.png"></span>
+                            <h4>Jobs</h4>
+                        </a>
+                    </li>
+                    <li class="overflow_btn">
+                        <a href="#">
+                            <span class="icon"><img src="image/ads manger.png"></span>
+                            <h4>Ad manger</h4>
+                        </a>
+                    </li>
+                    <li class="overflow_btn">
+                        <a href="#">
+                            <span class="icon"><img src="image/Blood donation.png"></span>
+                            <h4>Blood Donations</h4>
+                        </a>
+                    </li>
+                    <li class="overflow_btn">
+                        <a href="#">
+                            <span class="icon"><img src="image/Help.png"></span>
+                            <h4>Community Help</h4>
+                        </a>
+                    </li>
+                    <li class="overflow_btn">
+                        <a href="#">
+                            <span class="icon"><img src="image/messanger.png"></span>
+                            <h4>Messenger</h4>
+                        </a>
+                    </li>
+                    <li class="overflow_btn">
+                        <a href="#">
+                            <span class="icon"><img src="image/Most Recent.png"></span>
+                            <h4>Most recent</h4>
+                        </a>
+                    </li>
+                    <li class="see_less">
+                        <a href="#">
+                            <span class="icon"><i class="fa-solid fa-angle-up"></i></span>
+                            <h4>See Less</h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
     </div>
+
+
+
+    <!-- jquery -->
+
+    <script>
+
+        $(document).ready(function () {
+            $('.see_more').click(function () {
+                $(this).hide();
+                $('.overflow_btn').addClass('active');
+                $('.see_less').addClass('active');
+            })
+
+            $('.see_less').click(function () {
+                $('.see_more').show();
+                $('.overflow_btn').removeClass('active');
+                $('.see_less').removeClass('active');
+            })
+        })
+
+    </script>
+
 </body>
 
 </html>
