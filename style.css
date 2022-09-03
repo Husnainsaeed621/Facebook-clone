@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: "roboto";
+ }
+
+ *:focus {
+    outline: none;
+ }
+
+ body {
+    width: 100%;
+    overflow-x: hidden;
+    color: #050505;
+    font-family: roboto;
+    background-color: #F0f2f5;
+    font-size: 15px;
+ }
+
+ /* list none */
+
+*{
+    list-style: none;
+   }
+
+
+ /* ------common-css------ */
+
+ a{
+    text-decoration: none;
+    color: #050505;
+    font-size: 16px;
+    display: inline-block;
+ }
+
+ ul,
+ li {
+    list-style-type: none;
+ }
+
+ img {
+    max-width: 100%;
+ }
+
+/*----Common-classis-----*/
+ 
+.flex {
+    display: flex;
+}
+
+.d_flex {
+     display: flex;
+     align-items: center;
+}
+
+.d_flex_center {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.d_flex_sb {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.d_flex_end {
+     display: flex;
+     align-items: center;
+     justify-content: flex-end;
+}
+
+
+/* --round-img-- */
+
+.round-img{
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+.round-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* ---fixed---*/
+
+.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+
+/* -----header-css-start----- */
+
+header {
+     padding: 2px 15px;
+     background-color: #fff;
+     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+header .left-part ,
+header .right-part {
+    width: 25%;
+}
+
+header .mid-menu {
+    width: 65%;
+}
+
+header .left-part .logo {
+    position: absolute;
+    width: 50px;
+    
+}
+
+header .left-part .logo img{
+    width: 50px;
+    
+}
+
+header .left-part .search_bar form {
+    margin-left: 45px;
+    width: calc(100% - 45px);
+    height: 40px;
+    position: relative;
+}
+
+header .left-part .search_bar form input{
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    border-radius: 50px;
+    border: none;
+    background-color: #f0f2f5;
+    padding: 5px;
+    padding-left: 30px;
+}
+  
+header .left-part .search_bar form button{
+    background-color: #f0f2f5;
+    font-size: 15px;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+}
+
+/* -------mid-menu-css-start------- */
+
+header .mid-menu ul{
+    width: 100%;
+    padding: 0 80px;
+}
+
+header .mid-menu ul li{
+    width: 20%;
+    border-radius: 5px;
+}
+
+header .mid-menu ul li a {
+    width: 100%;
+    text-align: center;
+    padding: 12px 5px;
+}
+
+header .mid-menu ul li:not(.active):hover {
+    background-color: #f0f2f5;
+}
+
+header .mid-menu ul li.active{
+    border-bottom: 3px solid #166ADA;
+    border-radius: 0;
+}
+
+header.mid-menu ul li a img{
+    width: 26px;
+}
+
+/* ---right-part-css-start--- */
+
+header .right-part ul li .avtar{
+    padding: 2px;
+    padding-right: 8px;
+    border-radius: 20px;
+}
+
+header .right-part ul li .avtar .round-img{
+    width: 35px;
+    height: 35px;
+}
+
+header .right-part ul li .avtar span{
+       margin-left: 5px;
+}
+
+header .right-part ul li a:not(.avtar){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #f0f2f5;
+    padding: 10px;
+}
+
+header .right-part ul li a:hover{
+    background-color: #E4E6EB;
+}
+
+   
