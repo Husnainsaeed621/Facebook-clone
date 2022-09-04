@@ -406,5 +406,62 @@ header .right-part ul li a:hover{
     transform: scale(1.05);
    }
 
-  
+   /* -------feed_and_add_section-start------- */
+
+.feed_and_add_section {
+    padding: 0 50px;
+}
+
+.feed_and_add_section .create_post {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.feed_and_add_section .create_post form {
+    width: 100%;
+    height: 45px;
+    margin-left: 10px;
+}
+
+.feed_and_add_section .create_post form input {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 50px;
+    font-size: 16px;
+    border: none;
+    padding-left: 20px;
+}
+
+.feed_and_add_section .create_post hr{
+    margin: 20px;
+}
+
+.feed_and_add_section .create_btn{
+    margin-top: 10px;
+}
+
+.feed_and_add_section .create_btn ul li {
+    width: 33.33%;
+}
+
+.feed_and_add_section .create_btn ul li a {
+    padding: 12px 10px;
+    border-radius: 5px;
+}
+
+.feed_and_add_section .create_btn ul li a:hover {
+    background-color: #f2f2f2;
+}
+
+.feed_and_add_section .create_btn ul li a span img {
+    width: 24px;
+    margin-right: 10px;
+}
+
+.feed_and_add_section .create_btn ul li a span h4 {
+    font-size: 14px;
+    margin-left: 20px;
+}
 
