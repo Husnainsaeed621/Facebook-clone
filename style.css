@@ -100,6 +100,13 @@
     z-index: 999;
 }
 
+.common_bg_feed {
+    background-color: #fff;
+    padding: 12px 15px;
+    margin-top: 15px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
 
 /* -----header-css-start----- */
 
@@ -293,3 +300,111 @@ header .right-part ul li a:hover{
    .main_content .left-sidebar ul .see_less.active {
     display: block;
    }
+
+   /* ---------Middle-feed-start---------- */
+
+   .middle_feed {
+    width: 55%;
+    padding: 0 ;
+    margin: 0 auto;
+    padding-right: 95px;
+   }
+
+   .middle_feed .strory .create_story {
+    width: 110px;
+    height: 200px;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    overflow: hidden;
+   }
+
+   .middle_feed .strory .create_story .story_thumb {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+   }
+
+   .middle_feed .strory .create_story .story_thumb::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: .4s;
+    z-index: 4;
+   }
+
+   .middle_feed .strory .create_story .story_thumb img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .4s;
+
+   }
+
+   .middle_feed .strory .create_story .story_btn {
+       position: absolute;
+       bottom: 0;
+       left: 0;
+       background-color: #fff;
+       padding-top: 20px;
+       padding-bottom: 10px;
+       text-align: center;
+       width: 100%;
+       z-index: 5;
+   }
+
+   .middle_feed .strory .create_story .story_btn p {
+    font-size: 12px;
+   }
+
+   .middle_feed .strory .create_story .story_btn span{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 3px solid #fff;
+     background-color: #166ADA;
+    border-radius: 50px;
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+   }
+
+   .middle_feed .strory .other-story .story_profile span {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 4px solid #166ADA;
+    z-index: 5;
+    border-radius: 50px;
+   }
+
+   .middle_feed .strory .other-story .story_name {
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    text-align: center;
+    width: 100%;
+    z-index: 5;
+   }
+
+   .middle_feed .strory .other-story .story_name p {
+    color: #fff;
+    font-size: 12px;
+   }
+
+   .middle_feed .strory a:hover .story_thumb::before {
+    background-color: rgba(0, 0, 0, 0.4);
+   }
+
+   .middle_feed .strory a:hover .story_thumb img {
+    transform: scale(1.05);
+   }
+
+  
+
