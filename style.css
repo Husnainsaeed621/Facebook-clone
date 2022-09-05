@@ -108,6 +108,46 @@
     border-radius: 8px;
 }
 
+/* -----like-and-hide-show-class----- */
+
+.show{
+    display: block !important;
+}
+
+.hide{
+    display: none !important;
+}
+
+.blue{
+    color: #166ADA !important;
+}
+
+/* --------Common-margin-class-------- */
+
+.ml-5{
+    margin-left: 5px;
+}
+
+.ml-10{
+    margin-left: 10px;
+}
+
+.ml-15 {
+    margin-left: 15px;
+}
+
+.mr-5{
+    margin-right: 5px;
+}
+
+.mr-10{
+    margin-right: 10px;
+}
+
+.mr-15 {
+    margin-right: 15px;
+}
+
 /* -----header-css-start----- */
 
 header {
@@ -462,6 +502,93 @@ header .right-part ul li a:hover{
 
 .feed_and_add_section .create_btn ul li a span h4 {
     font-size: 14px;
-    margin-left: 20px;
 }
 
+/* --------create-room-------- */
+
+.feed_and_add_section .create_room a {
+    width: 150px;
+    border-radius: 50px;
+    border: 1px solid #166ADA;
+    color: #166ADA;
+    font-size: 14px;
+    padding: 10px 3px;
+    font-weight: 500;
+}
+
+.feed_and_add_section .create_room a i {
+   width: 24px;
+   margin-right: 10px;
+}
+
+.feed_and_add_section .create_room a:hover {
+    background-color: #E4E6EB;
+}
+
+.main_post{
+    padding-bottom: 0;
+}
+
+.main_post .post_time_name .time span {
+    font-size: 12px;
+    margin-right: 2px;
+}
+.main_post .post_more a {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+}
+
+.main_post .post_more a:hover{
+    background-color: #E4E6EB;
+}
+
+.main_post .post_caption {
+    margin: 10px 0;
+}
+.main_post .post_hashtag ul li a {
+    font-size: 14px;
+    color: #166ADA;
+    margin-right: 5px;
+}
+
+.main_post .post_hashtag ul li a:hover{
+    text-decoration: underline;
+}
+
+.main_post .post_img{
+    margin: 0 10px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.main_post .see_who_react span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.main_post .like_option{
+    padding-top: 5px;
+    margin-top: 5px;
+    border-top: 1px solid #ccc;
+}
+
+.main_post .like_option li {
+    width: 33%;
+    padding: 10px 5px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.main_post .like_option li:hover{
+    background-color: #E4E6EB;
+}
+
+.main_post .like_option li span:first-child{
+    height: 20px;
+}
+
+.main_post .a_like {
+    display: none;
+}
